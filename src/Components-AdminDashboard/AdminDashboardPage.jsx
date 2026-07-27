@@ -1,14 +1,14 @@
-import EduhireSidebar from "./Sidebar";
-import EduhireDashboard from "./Dashboard";
+import Sidebar from "./Sidebar";
+import Dashboard from "./Dashboard";
 import "./AdminDashboardPage.css";
-
+ 
 const AdminDashboardPage = () => {
   return (
-    <div className="eduhireAppLayout">
-      <EduhireSidebar />
-      <EduhireDashboard />
-    </div>
+<div className="admin-dashboard-page-layout">
+<Sidebar />
+<Dashboard />
+</div>
   );
 };
-
+ 
 export default AdminDashboardPage;
