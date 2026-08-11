@@ -23,6 +23,7 @@ import CertificatesAct from '../assets/AdminAssets/CertificatesAct.png'
 import Minimize from '../assets/AdminAssets/Minimize.png'
 import Maximize from '../assets/AdminAssets/Maximize.png'
 import StudentDashboard from './StudentDashboard'
+import StudentProfile from './StudentProfile'
 
 const StudentDashboardHome = () => {
     const [activetab,setActivetab]=useState('Dashboard');
@@ -93,6 +94,9 @@ const StudentDashboardHome = () => {
             <div className='AdminDashboard-Mainsec'>
                 {activetab==='Dashboard' && (
                     <StudentDashboard/>
+                )}
+                {activetab==='Profile' && (
+                    <StudentProfile/>
                 )}
                 
                    
