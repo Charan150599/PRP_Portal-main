@@ -1,29 +1,36 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState } from "react";
 
-const Context = createContext();
+const DataContext = createContext();
 
 const DataProvider = ({ children }) => {
-
     const initialRegistration = {
-        PlacementOfficer: [],
-        Recruiter: [],
-        Student: [],
-        TrainingCoordinator: []
+        placementOfficer: [],
+        recruiter: [],
+        student: [],
+        trainingCoordinator: [],
+        admin: [],
     };
 
-    const [user, setUser] = useState(initialRegistration)
-
-
-
-
+    const [user, setUser] = useState(initialRegistration);
+    const [loggedInUser, setLoggedInUser] = useState(null);
+    const [resetEmail, setResetEmail] = useState("");
 
     return (
-        <Context.Provider value={{user,setUser}}>
+        <DataContext.Provider
+            value={{
+                user,
+                setUser,
+                loggedInUser,
+                setLoggedInUser,
+                resetEmail,
+                setResetEmail,
+            }}
+        >
             {children}
-        </Context.Provider>
+        </DataContext.Provider>
     );
 };
 
-export default DataProvider
+export default DataProvider;
 
-export const useData = () => useContext(Context);
+export const useData = () => useContext(DataContext);
