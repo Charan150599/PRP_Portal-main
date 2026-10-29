@@ -137,7 +137,7 @@ const socialIcons = [
 const LandingPage = () => {
   return (
     <div className="Prp-Landing-Page-Container">
-      {/* Header */}
+
       <header className="Prp-Landing-Page-Header">
         <div className="Prp-Landing-Page-Header-Brand">
           <img
@@ -172,7 +172,6 @@ const LandingPage = () => {
         </div>
       </header>
 
-      {/* Hero */}
       <section className="Prp-Landing-Page-Hero" id="home">
         <div className="Prp-Landing-Page-Hero-Content">
           <p className="Prp-Landing-Page-Hero-Label">BUILD YOUR FUTURE</p>
@@ -201,7 +200,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Why choose us */}
+    
       <section className="Prp-Landing-Page-Features" id="features">
         <p className="Prp-Landing-Page-Features-Label">WHY CHOOSE US</p>
         <h3 className="Prp-Landing-Page-Features-Heading">
@@ -226,7 +225,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Success stories */}
+  
       <section className="Prp-Landing-Page-Stories" id="successStories">
         <p className="Prp-Landing-Page-Stories-Label">SUCCESS STORIES</p>
         <h3 className="Prp-Landing-Page-Stories-Heading">WHAT OUR USERS SAY</h3>
@@ -274,7 +273,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Trusted by */}
+
       <section className="Prp-Landing-Page-Companies">
         <p className="Prp-Landing-Page-Companies-Label">
           TRUSTED BY LEADING COMPANIES
@@ -294,7 +293,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
+
       <footer className="Prp-Landing-Page-Footer">
         <div className="Prp-Landing-Page-Footer-Columns">
           {footerColumns.map((column) => (
