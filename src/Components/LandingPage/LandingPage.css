@@ -1,0 +1,803 @@
+/* ---------- Base ---------- */
+.Prp-Landing-Page-Container {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Open Sans", sans-serif;
+  color: #14285a;
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+.Prp-Landing-Page-Container *,
+.Prp-Landing-Page-Container *::before,
+.Prp-Landing-Page-Container *::after {
+  box-sizing: border-box;
+}
+
+/* ---------- Header (values from Figma, frame 1920px) ---------- */
+.Prp-Landing-Page-Header {
+  display: grid;
+  grid-template-columns: 432px 1040px 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 46px 0 19px;
+  background: linear-gradient(90deg, #5a6b93 0%, #cfd5e1 100%);
+  border: 1px solid #5a7aa0;
+}
+
+.Prp-Landing-Page-Header-Brand {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 66px;
+}
+
+.Prp-Landing-Page-Header-Logo {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.Prp-Landing-Page-Header-Title {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -1.4px;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Header-Nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1040px;
+  height: 30px;
+}
+
+.Prp-Landing-Page-Header-Nav-Link {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -1.4px;
+  text-align: center;
+  color: #142a56;
+  text-decoration: none;
+  white-space: nowrap;
+  padding-bottom: 6px;
+}
+
+.Prp-Landing-Page-Header-Nav-Link-Active::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  left: -6px;
+  right: -6px;
+  bottom: 0;
+  height: 2px;
+  background: #132a56;
+}
+
+.Prp-Landing-Page-Header-Actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: 20px;
+  width: 290px;
+  height: 45px;
+}
+
+.Prp-Landing-Page-Header-Login-Button,
+.Prp-Landing-Page-Header-Register-Button {
+  flex: 1;
+  height: 45px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.Prp-Landing-Page-Header-Login-Button {
+  background: #1b6f94;
+}
+
+.Prp-Landing-Page-Header-Register-Button {
+  background: #14285a;
+}
+
+/* ---------- Hero (values from Figma, frame 1920px) ---------- */
+.Prp-Landing-Page-Hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  min-height: 715px;
+  padding: 0 150px;
+  background: linear-gradient(90deg, #5a6b93 0%, #cfd5e1 55%, #ffffff 60%);
+}
+
+.Prp-Landing-Page-Hero-Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.Prp-Landing-Page-Hero-Label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 259px;
+  height: 30px;
+  margin: 0 0 42px;
+  padding: 0 10px;
+  font-size: 22px;
+  white-space: nowrap;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Hero-Heading {
+  margin: 0 0 35px;
+  padding: 0 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -1.4px;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Hero-Description {
+  max-width: 696px;
+  margin: 0 0 51px;
+  padding: 0 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -1.4px;
+  color: #2a2a2a;
+}
+
+.Prp-Landing-Page-Hero-Buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Prp-Landing-Page-Hero-Primary-Button,
+.Prp-Landing-Page-Hero-Secondary-Button {
+  height: 75px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 100%;
+  letter-spacing: -1.4px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.Prp-Landing-Page-Hero-Primary-Button {
+  background: #14285a;
+  color: #ffffff;
+}
+
+.Prp-Landing-Page-Hero-Secondary-Button {
+  background: #ffffff;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Hero-Image-Container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.Prp-Landing-Page-Hero-Image {
+  width: 100%;
+  max-width: 700px;
+  aspect-ratio: 700 / 500;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ---------- Features (1920px frame, section height 630px) ---------- */
+.Prp-Landing-Page-Features {
+  min-height: 630px;
+  padding: 57px 90px 53px;
+  text-align: center;
+  background: linear-gradient(90deg, #4a5d86 0%, #cfd5e1 100%);
+}
+
+.Prp-Landing-Page-Features-Label {
+  margin: 0 0 40px;
+  font-size: 26px;
+  line-height: 36px;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Features-Heading {
+  margin: 0 0 53px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Features-Grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 60px;
+}
+
+.Prp-Landing-Page-Feature-Card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 347px;
+  padding: 28px 20px 30px;
+  background: #ffffff;
+  border: 2px solid #5a8aa8;
+  border-radius: 22px;
+}
+
+.Prp-Landing-Page-Feature-Icon-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  background: #cfdcfb;
+  border-radius: 50%;
+}
+
+.Prp-Landing-Page-Feature-Icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.Prp-Landing-Page-Feature-Title {
+  margin: 0 0 31px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Feature-Description {
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  color: #2a2a2a;
+}
+
+/* ---------- Success stories (section height 722px) ---------- */
+.Prp-Landing-Page-Stories {
+  min-height: 722px;
+  padding: 106px 90px 102px;
+  text-align: center;
+  background: linear-gradient(90deg, #5a6b93 0%, #cfd5e1 55%, #ffffff 60%);
+}
+
+.Prp-Landing-Page-Stories-Label {
+  margin: 0 0 40px;
+  font-size: 26px;
+  line-height: 36px;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Stories-Heading {
+  margin: 0 0 55px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Stories-Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 44px;
+}
+
+.Prp-Landing-Page-Story-Card {
+  position: relative;
+  min-height: 339px;
+  padding: 44px 48px 60px;
+  text-align: left;
+  background: #14285a;
+  border: 2px solid #8a9bc0;
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.Prp-Landing-Page-Story-Quote-Mark {
+  position: absolute;
+  top: 33px;
+  right: 48px;
+  width: 100px;
+  height: auto;
+  opacity: 1;
+  pointer-events: none;
+}
+
+.Prp-Landing-Page-Story-Header {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 31px;
+}
+
+.Prp-Landing-Page-Story-Avatar-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  border: 4px solid #ffffff;
+  border-radius: 22px;
+}
+
+.Prp-Landing-Page-Story-Avatar {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+}
+
+.Prp-Landing-Page-Story-Stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 6px;
+}
+
+.Prp-Landing-Page-Story-Star {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.Prp-Landing-Page-Story-Name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.Prp-Landing-Page-Story-Role {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #6f80a8;
+}
+
+.Prp-Landing-Page-Story-Review {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 25px;
+  color: #5d7099;
+}
+
+/* ---------- Trusted companies (section height 339px, 52px white gap below) ---------- */
+.Prp-Landing-Page-Companies {
+  min-height: 339px;
+  margin-bottom: 52px;
+  padding: 55px 90px 60px;
+  text-align: center;
+  background: linear-gradient(90deg, #2f4572 0%, #6e7c9c 100%);
+}
+
+.Prp-Landing-Page-Companies-Label {
+  margin: 0 0 43px;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 2px;
+  color: #cfd5e1;
+}
+
+.Prp-Landing-Page-Companies-Heading {
+  margin: 0 0 63px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 2px;
+  color: #14285a;
+}
+
+.Prp-Landing-Page-Companies-Logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+.Prp-Landing-Page-Companies-Logo {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ---------- Footer (section height 481px) ---------- */
+.Prp-Landing-Page-Footer {
+  min-height: 481px;
+  padding: 56px 120px 107px;
+  background: linear-gradient(180deg, #1d2a55 0%, #0b1438 100%);
+  color: #ffffff;
+}
+
+.Prp-Landing-Page-Footer-Columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.Prp-Landing-Page-Footer-Column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.Prp-Landing-Page-Footer-Column-Title {
+  margin: 0 0 14px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.Prp-Landing-Page-Footer-Link {
+  font-size: 16px;
+  line-height: 22px;
+  color: #aab4cf;
+  text-decoration: none;
+}
+
+.Prp-Landing-Page-Footer-Link:hover {
+  color: #ffffff;
+}
+
+.Prp-Landing-Page-Footer-Divider {
+  height: 3px;
+  margin: 62px 0 0;
+  background: #3a4772;
+}
+
+.Prp-Landing-Page-Footer-Bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+}
+
+.Prp-Landing-Page-Footer-Copyright {
+  margin: 0;
+  font-size: 15px;
+  line-height: 21px;
+  color: #6f7ba0;
+}
+
+.Prp-Landing-Page-Footer-Socials {
+  display: flex;
+  gap: 30px;
+}
+
+.Prp-Landing-Page-Footer-Social-Icon {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1800px) {
+  .Prp-Landing-Page-Header {
+    grid-template-columns: auto 1fr auto;
+    gap: 32px;
+  }
+
+  .Prp-Landing-Page-Header-Nav {
+    width: 100%;
+    max-width: 1040px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 1500px) {
+  .Prp-Landing-Page-Hero {
+    padding: 0 80px;
+  }
+
+  .Prp-Landing-Page-Hero-Heading {
+    font-size: 40px;
+  }
+
+  .Prp-Landing-Page-Hero-Description {
+    max-width: 560px;
+    font-size: 22px;
+  }
+
+  .Prp-Landing-Page-Hero-Primary-Button,
+  .Prp-Landing-Page-Hero-Secondary-Button {
+    height: 60px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .Prp-Landing-Page-Header {
+    padding: 0 24px;
+  }
+
+  .Prp-Landing-Page-Header-Title {
+    font-size: 20px;
+  }
+
+  .Prp-Landing-Page-Header-Nav-Link {
+    font-size: 14px;
+  }
+
+  .Prp-Landing-Page-Header-Actions {
+    width: 240px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .Prp-Landing-Page-Header {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "brand actions"
+      "nav nav";
+    height: auto;
+    padding: 12px 20px;
+    row-gap: 12px;
+  }
+
+  .Prp-Landing-Page-Header-Brand {
+    grid-area: brand;
+    width: auto;
+    height: auto;
+  }
+
+  .Prp-Landing-Page-Header-Actions {
+    grid-area: actions;
+  }
+
+  .Prp-Landing-Page-Header-Nav {
+    grid-area: nav;
+    max-width: 100%;
+    height: auto;
+    gap: 16px;
+    overflow-x: auto;
+  }
+
+  .Prp-Landing-Page-Hero {
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: auto;
+    padding: 48px 40px;
+  }
+
+  .Prp-Landing-Page-Hero-Image-Container {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .Prp-Landing-Page-Header {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "brand"
+      "actions"
+      "nav";
+  }
+
+  .Prp-Landing-Page-Header-Title {
+    font-size: 18px;
+  }
+
+  .Prp-Landing-Page-Header-Actions {
+    width: 100%;
+    justify-self: stretch;
+  }
+
+  .Prp-Landing-Page-Header-Login-Button,
+  .Prp-Landing-Page-Header-Register-Button {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .Prp-Landing-Page-Hero {
+    padding: 32px 20px;
+  }
+
+  .Prp-Landing-Page-Hero-Label {
+    width: auto;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .Prp-Landing-Page-Hero-Heading {
+    font-size: 32px;
+  }
+
+  .Prp-Landing-Page-Hero-Description {
+    font-size: 18px;
+    margin-bottom: 28px;
+  }
+
+  .Prp-Landing-Page-Hero-Buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .Prp-Landing-Page-Hero-Primary-Button,
+  .Prp-Landing-Page-Hero-Secondary-Button {
+    height: 52px;
+    font-size: 18px;
+  }
+}
+
+
+/* ---------- Responsive: features, stories, companies, footer ---------- */
+@media (max-width: 1500px) {
+  .Prp-Landing-Page-Features,
+  .Prp-Landing-Page-Stories,
+  .Prp-Landing-Page-Companies {
+    padding-inline: 60px;
+  }
+
+  .Prp-Landing-Page-Footer {
+    padding: 56px 60px 90px;
+  }
+
+  .Prp-Landing-Page-Features-Grid,
+  .Prp-Landing-Page-Stories-Grid {
+    gap: 28px;
+  }
+
+  .Prp-Landing-Page-Story-Card {
+    padding: 36px 32px 48px;
+    border-radius: 48px;
+  }
+
+  .Prp-Landing-Page-Feature-Title { font-size: 22px; }
+  .Prp-Landing-Page-Feature-Description { font-size: 18px; line-height: 27px; }
+  .Prp-Landing-Page-Story-Review { font-size: 17px; line-height: 24px; }
+}
+
+@media (max-width: 1280px) {
+  .Prp-Landing-Page-Features,
+  .Prp-Landing-Page-Stories,
+  .Prp-Landing-Page-Companies,
+  .Prp-Landing-Page-Footer,
+  .Prp-Landing-Page-Feature-Card,
+  .Prp-Landing-Page-Story-Card {
+    min-height: 0;
+  }
+
+  .Prp-Landing-Page-Features,
+  .Prp-Landing-Page-Stories,
+  .Prp-Landing-Page-Companies,
+  .Prp-Landing-Page-Footer {
+    padding: 48px 40px;
+  }
+
+  .Prp-Landing-Page-Features-Label,
+  .Prp-Landing-Page-Stories-Label,
+  .Prp-Landing-Page-Companies-Label {
+    font-size: 20px;
+    margin-bottom: 28px;
+  }
+
+  .Prp-Landing-Page-Features-Heading,
+  .Prp-Landing-Page-Stories-Heading,
+  .Prp-Landing-Page-Companies-Heading {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 36px;
+  }
+
+  .Prp-Landing-Page-Features-Grid,
+  .Prp-Landing-Page-Stories-Grid {
+    gap: 20px;
+  }
+
+  .Prp-Landing-Page-Feature-Card { padding: 24px 14px; }
+  .Prp-Landing-Page-Feature-Icon-Container { width: 72px; height: 72px; margin-bottom: 20px; }
+  .Prp-Landing-Page-Feature-Icon { width: 30px; height: 30px; }
+  .Prp-Landing-Page-Feature-Title { font-size: 19px; line-height: 26px; margin-bottom: 16px; }
+  .Prp-Landing-Page-Feature-Description { font-size: 16px; line-height: 24px; }
+
+  .Prp-Landing-Page-Story-Card { padding: 28px 24px 36px; border-radius: 36px; }
+  .Prp-Landing-Page-Story-Header { gap: 18px; margin-bottom: 20px; }
+  .Prp-Landing-Page-Story-Quote-Mark { top: 24px; right: 28px; width: 60px; }
+  .Prp-Landing-Page-Story-Avatar-Container { width: 64px; height: 64px; border-width: 3px; border-radius: 14px; }
+  .Prp-Landing-Page-Story-Avatar { width: 34px; height: 34px; }
+  .Prp-Landing-Page-Story-Star { width: 15px; height: 15px; }
+  .Prp-Landing-Page-Story-Name { font-size: 18px; line-height: 24px; }
+  .Prp-Landing-Page-Story-Role { font-size: 11px; }
+  .Prp-Landing-Page-Story-Review { font-size: 15px; line-height: 22px; }
+
+  .Prp-Landing-Page-Companies { margin-bottom: 32px; }
+  .Prp-Landing-Page-Companies-Logo { height: 28px; }
+
+  .Prp-Landing-Page-Footer-Column-Title { font-size: 16px; }
+  .Prp-Landing-Page-Footer-Link { font-size: 14px; }
+  .Prp-Landing-Page-Footer-Divider { margin-top: 40px; }
+  .Prp-Landing-Page-Footer-Copyright { font-size: 13px; }
+  .Prp-Landing-Page-Footer-Social-Icon { width: 22px; height: 22px; }
+}
+
+@media (max-width: 1024px) {
+  .Prp-Landing-Page-Features-Grid { grid-template-columns: repeat(3, 1fr); }
+  .Prp-Landing-Page-Stories-Grid { grid-template-columns: 1fr; }
+  .Prp-Landing-Page-Footer-Columns { grid-template-columns: repeat(2, 1fr); row-gap: 32px; }
+
+  .Prp-Landing-Page-Companies-Logos {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .Prp-Landing-Page-Features,
+  .Prp-Landing-Page-Stories,
+  .Prp-Landing-Page-Companies,
+  .Prp-Landing-Page-Footer {
+    padding: 32px 20px;
+  }
+
+  .Prp-Landing-Page-Features-Label,
+  .Prp-Landing-Page-Stories-Label,
+  .Prp-Landing-Page-Companies-Label {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+
+  .Prp-Landing-Page-Features-Heading,
+  .Prp-Landing-Page-Stories-Heading,
+  .Prp-Landing-Page-Companies-Heading {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 28px;
+  }
+
+  .Prp-Landing-Page-Features-Grid { grid-template-columns: 1fr; gap: 16px; }
+  .Prp-Landing-Page-Story-Card { padding: 24px 20px 28px; border-radius: 28px; }
+  .Prp-Landing-Page-Story-Quote-Mark { width: 44px; }
+  .Prp-Landing-Page-Companies-Logos { gap: 20px 24px; }
+  .Prp-Landing-Page-Companies-Logo { height: 24px; }
+  .Prp-Landing-Page-Footer-Columns { gap: 24px; }
+  .Prp-Landing-Page-Footer-Bottom { flex-direction: column; align-items: flex-start; gap: 16px; }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import DataProvider from "./DataProvider";
+import LandingPage from "./Components/LandingPage/LandingPage";
 import CommonLoginScreen from "./Components/Login/CommonLoginScreen";
 import ForgotPassword from "./Components/ForgotPassword/ForgotPassword";
 import PlacementReset from "./Components/PlacementReset/PlacementReset";
@@ -12,6 +13,14 @@ import TrainingCoordinator from "./Components/TrainingCoordinator/TrainingCoordi
 import "./App.css";
 
 const router = createBrowserRouter([
+    {
+        path: "/PRP_Portal",
+        element: <LandingPage />,
+    },
+    {
+        path: "/PRP_Portal/LandingPage",
+        element: <LandingPage />,
+    },
     {
         path: "/PRP_Portal/Login",
         element: <CommonLoginScreen />,
