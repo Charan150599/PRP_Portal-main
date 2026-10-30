@@ -1,7 +1,7 @@
 import React from "react";
 import "./LandingPage.css";
 
-import logoIcon from "../../assets/LandingPageAssets/logoIcon.png";
+import Eduhire from "../../assets/LandingPageAssets/Eduhire.png";
 import heroIllustration from "../../assets/LandingPageAssets/heroIllustration.png";
 import wideJobOpportunitiesIcon from "../../assets/LandingPageAssets/wideJobOpportunitiesIcon.png";
 import aiResumeMatchingIcon from "../../assets/LandingPageAssets/aiResumeMatchingIcon.png";
@@ -142,7 +142,7 @@ const LandingPage = () => {
         <div className="Prp-Landing-Page-Header-Brand">
           <img
             className="Prp-Landing-Page-Header-Logo"
-            src={logoIcon}
+            src={Eduhire}
             alt="Placement and Recruitment Platform logo"
           />
           <h1 className="Prp-Landing-Page-Header-Title">
