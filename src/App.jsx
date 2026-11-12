@@ -9,6 +9,7 @@ import PlacementReset from "./Components/PlacementReset/PlacementReset";
 import ResetPassword from "./Components/ResetPassword/ResetPassword";
 import SuccessfulPage from "./Components/SuccessfulPage/SuccessfulPage";
 import TrainingCoordinator from "./Components/TrainingCoordinator/TrainingCoordinator";
+import CandidateDashboard from "./Components/CandidateDashboard/CandidateDashboard";
 
 import "./App.css";
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
     {
         path: "/PRP_Portal/PasswordResetSuccess",
         element: <SuccessfulPage />,
+    },
+    {
+        path: "/PRP_Portal/CandidateDashboard",
+        element: <CandidateDashboard />,
     },
 ]);
 

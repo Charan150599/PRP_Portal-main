@@ -1,0 +1,37 @@
+.Prp-Side-Menu-Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Prp-Side-Menu-Item {
+  box-sizing: border-box;
+  height: 46px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #132a56;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Prp-Side-Menu-Item-Text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+
+
+.Prp-Side-Menu-Arrow {
+  width: 16px;
+  height: 9px;
+  transition: transform 0.2s;
+}
+
+.Prp-Side-Menu-Arrow-Open {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,186 @@
+.Prp-Ai-Recommended-Jobs-Container {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 40px;
+  padding: 24px 40px 40px;
+  background: linear-gradient(90deg, #68799b 0%, #c3c9d5 50%, #d0d4dd 100%);
+  border: 1px solid #176789;
+  border-radius: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.Prp-Ai-Recommended-Jobs-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Prp-Ai-Recommended-Jobs-Heading {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.Prp-Ai-Recommended-Jobs-Sparkle {
+  width: 40px;
+  height: 48px;
+}
+
+.Prp-Ai-Recommended-Jobs-Title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  color: #192F5A;
+}
+
+.Prp-Ai-Recommended-Jobs-View-All {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 20px;
+  color: #132a56;
+  cursor: pointer;
+}
+
+.Prp-Ai-Recommended-Jobs-Arrow {
+  width: 16px;
+  height: 16px;
+}
+
+.Prp-Ai-Recommended-Jobs-Subtitle {
+  max-width: 880px;
+  margin: 16px 0 32px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #41547B;
+}
+
+.Prp-Ai-Recommended-Jobs-List {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  padding: 0 40px;
+}
+
+.Prp-Ai-Recommended-Jobs-Card {
+  display: grid;
+  grid-template-columns: 110px 1.4fr 1fr 1fr 1fr;
+  align-items: center;
+  min-height: 175px;
+  padding: 0 56px;
+  background: #132a56;
+  border: 1px solid #176789;
+  border-radius: 14px;
+}
+
+.Prp-Ai-Recommended-Jobs-Initial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  background: #426dc0;
+  border-radius: 14px;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.Prp-Ai-Recommended-Jobs-Details {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.Prp-Ai-Recommended-Jobs-Job-Title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.Prp-Ai-Recommended-Jobs-Company {
+  margin: 0;
+  font-size: 18px;
+  color: #b8bfcc;
+}
+
+.Prp-Ai-Recommended-Jobs-Location-Row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 18px;
+  color: #b8bfcc;
+}
+
+.Prp-Ai-Recommended-Jobs-Pin {
+  width: 16px;
+  height: 20px;
+}
+
+.Prp-Ai-Recommended-Jobs-Stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.Prp-Ai-Recommended-Jobs-Badge {
+  min-width: 77px;
+  padding: 8px 12px;
+  background: #d8d7ef;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: center;
+  color: #132a56;
+}
+
+.Prp-Ai-Recommended-Jobs-Stat-Label {
+  padding-left: 10px;
+  font-size: 18px;
+  color: #b8bfcc;
+}
+
+.Prp-Ai-Recommended-Jobs-View-Job {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  justify-self: end;
+  width: 144px;
+  height: 56px;
+  background: #ffffff;
+  border: 1px solid #176789;
+  border-radius: 14px;
+  font-family: inherit;
+  font-size: 18px;
+  color: #132a56;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .Prp-Ai-Recommended-Jobs-Container {
+    padding: 20px;
+  }
+
+  .Prp-Ai-Recommended-Jobs-List {
+    padding: 0;
+  }
+
+  .Prp-Ai-Recommended-Jobs-Card {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 24px;
+  }
+
+  .Prp-Ai-Recommended-Jobs-View-Job {
+    justify-self: start;
+  }
+
+  .Prp-Ai-Recommended-Jobs-Title {
+    font-size: 24px;
+  }
+}

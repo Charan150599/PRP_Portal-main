@@ -1,0 +1,19 @@
+.Prp-Candidate-Dashboard-Container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  gap: 52px;
+  min-height: 100vh;
+  padding: 38px 24px 24px 17px;
+  background: linear-gradient(90deg, #5a6a91 7%, #ffffff 64%);
+}
+
+.Prp-Candidate-Dashboard-Sidebar {
+  width: 232px;
+  flex-shrink: 0;
+}
+
+.Prp-Candidate-Dashboard-Content {
+  flex: 1;
+  min-width: 0;
+}
